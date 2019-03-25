@@ -3,7 +3,7 @@
 
 # * ---------------- source
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/quanweiGithub/Ubuntu-China-Source/master/ChangeSource.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/seognil-forker/Ubuntu-China-Source/self/ChangeSource.sh) 18 ali"
 
 # * ---------------- install zsh
 
