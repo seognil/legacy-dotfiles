@@ -9,7 +9,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/seognil-forker/Ubuntu-Chin
 
 sudo apt install -y zsh
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sed -e 's/^\s*chsh -s/sudo chsh -s/g' -e 's/^\s*env\szsh.*$/#/g')"
+
+# * ---------------- install screenfetch
+
+sudo apt install -y screenfetch
+
 
 # * ---------------- install screenfetch
 
@@ -46,9 +51,7 @@ nrm use taobao
 
 sudo yarn global add cloc @vue/cli create-react-app http-server
 
-# * ---------------- config bash
-
-# echo zsh >> ~/.bashrc
-
 # * ---------------- config zsh
+
+chsh -s /usr/bin/zsh
 
