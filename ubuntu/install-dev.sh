@@ -52,7 +52,10 @@ sudo yarn global add cloc @vue/cli create-react-app http-server
 
 # * ---------------- config zsh
 
-chsh -s /usr/bin/zsh
+echo "Almost finish ----------------"
+
+printf "${BLUE}Time to change your default shell to zsh!${NORMAL}\n"
+chsh -s $(grep /zsh$ /etc/shells | tail -1)
 
 env zsh
 
