@@ -25,8 +25,10 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | z
 
 # * ---------------- install node
 
-curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
-sudo apt install -y nodejs
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo sed -i 's/deb.nodesource.com\/node_...x/mirrors.tuna.tsinghua.edu.cn\/nodesource\/deb_10.x\//g' /etc/apt/sources.list.d/nodesource.list
+# sudo sed -i 's/deb.nodesource.com\/node_...x/mirrors.ustc.edu.cn\/nodesource\/deb\/node_10.x/g' /etc/apt/sources.list.d/nodesource.list
+sudo apt update && sudo apt install -y nodejs
 
 sudo apt install -y gcc g++ make
 
