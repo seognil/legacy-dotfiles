@@ -55,3 +55,5 @@ sudo yarn global add cloc @vue/cli create-react-app http-server
 
 chsh -s /usr/bin/zsh
 
+env zsh
+
