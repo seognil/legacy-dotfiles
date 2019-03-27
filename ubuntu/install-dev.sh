@@ -54,6 +54,7 @@ sudo yarn global add cloc @vue/cli create-react-app http-server
 
 # * ---------------- config zsh
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/seognil/dotfiles/master/ubuntu/zsh-custom.sh)"
 
 # * ---------------- testing
 
