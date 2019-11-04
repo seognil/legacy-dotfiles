@@ -9,7 +9,9 @@ sudo apt update
 sudo apt install -y zsh
 
 # * silent install oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sed -e 's/^\s*chsh -s/sudo chsh -s/g' -e 's/^\s*env\szsh.*$/#/g')"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" "" --unattended
+# git clone https://github.com/robbyrussell/oh-my-zsh
+# bash ./oh-my-zsh/tools/install.sh --unattended
 
 # * ---------------- install soft
 
@@ -19,7 +21,8 @@ sudo apt install -y gcc g++ make
 
 # * nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | zsh
-export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
+# git clone https://github.com/nvm-sh/nvm
+# bash ./nvm/v0.34.0/install.sh
 
 # * ---------------- update system
 

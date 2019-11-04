@@ -3,10 +3,12 @@
 ```shell
 
 # * CN change source
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/seognil/dotfiles/master/ubuntu/install-dev-cn.sh)"
+git clone https://github.com/seognil/dotfiles; cd ubuntu; bash install-dev-cn.sh
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/seognil/dotfiles/master/ubuntu/install-dev-cn.sh)"
 
 # * not change source
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/seognil/dotfiles/master/ubuntu/install-dev.sh)"
+git clone https://github.com/seognil/dotfiles; cd ubuntu; bash install-dev.sh
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/seognil/dotfiles/master/ubuntu/install-dev.sh)"
 
 ```
 
